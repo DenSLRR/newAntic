@@ -109,7 +109,7 @@ app.post('/auth/register', registerValidation, async(req, res) => {
 
 
 app.get('/auth/me', checkAuth, async (req, res) => {
-
+    //1:16
  try {
     const user = await UserModel.findById(req.userId);
     if (!user) {
